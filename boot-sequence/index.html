@@ -9,7 +9,7 @@ title: Boot Sequence - The blog of Jeff Nunn
         </header>
         <div class="content">
             <p>On life inside the simulation<br />
-                and the things we create and love within.
+                and the things we create within.
             </p>
         </div>
         <div class="inner">
@@ -27,60 +27,18 @@ title: Boot Sequence - The blog of Jeff Nunn
 <div id="main">
 
     <!-- One -->
-        <section id="one" class="tiles">
-            <article>
-                <span class="image">
-                    <img src="images/pic03.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="landing.html" class="link">Writing</a></h3>
-                    <p>2020-02-25</p>
-                </header>
-            </article>
-            <article>
-                <span class="image">
-                    <img src="images/pic02.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="landing.html" class="link">Tempus</a></h3>
-                    <p>feugiat amet tempus</p>
-                </header>
-            </article>
-            <article>
-                <span class="image">
-                    <img src="images/pic03.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="landing.html" class="link">Magna</a></h3>
-                    <p>Lorem etiam nullam</p>
-                </header>
-            </article>
-            <article>
-                <span class="image">
-                    <img src="images/pic04.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="landing.html" class="link">Ipsum</a></h3>
-                    <p>Nisl sed aliquam</p>
-                </header>
-            </article>
-            <article>
-                <span class="image">
-                    <img src="images/pic05.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="landing.html" class="link">Consequat</a></h3>
-                    <p>Ipsum dolor sit amet</p>
-                </header>
-            </article>
-            <article>
-                <span class="image">
-                    <img src="images/pic06.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="landing.html" class="link">Etiam</a></h3>
-                    <p>Feugiat amet tempus</p>
-                </header>
-            </article>
-        </section>
+    <section id="one" class="tiles">
+        {% for post in site.posts %}
+        <article>
+            <span class="image">
+                <img src="images/pic0{{random_number: 1, 11}}.jpg" alt="" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ post.url | prepend: site.baseurl }}" class="link">{{ post.title }}</a></h3>
+                <p>{{ post.date }}</p>
+                <p style="margin-top:20px; font-size:11px;" class="button small">{{ post.categories }}</p>
+            </header>
+        </article>
+        {% endfor %}
+    </section>
 </div>

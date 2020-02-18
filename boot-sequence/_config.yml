@@ -21,7 +21,7 @@
 title: Boot Sequence - The blog of Jeff Nunn
 email: jbnunn@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  On life within the simulation and the things we create and love within.
+  On life within the simulation and the things we create within.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jeffnunn.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jbnunn
@@ -30,6 +30,7 @@ github_username:  jbnunn
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-random
 
 # Exclude from processing.
 # The following items will not be processed, by default.
