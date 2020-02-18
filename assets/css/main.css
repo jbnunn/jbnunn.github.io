@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family: 'Roboto Slab', serif;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -99,7 +100,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro';
+		font-family: 'Roboto Slab', serif;
 		font-weight: 300;
 		color: #5d5d5d;
 		font-size: 14pt;
@@ -1943,14 +1944,14 @@ input, select, textarea {
 						background: #3dbaf4;
 					}
 
-				ul.social li a.fa-dribbble {
-					background: #c4376b;
-				}
-
-					ul.social li a.fa-dribbble:hover {
-						background: #d4477b;
+				ul.social li a.fa-twitch {
+						background: #6441a5;
 					}
-
+	
+						ul.social li a.fa-twitch:hover {
+							background: #9146ff;
+						}
+	
 				ul.social li a.fa-linkedin {
 					background: #006599;
 				}
